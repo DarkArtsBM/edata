@@ -34,7 +34,7 @@ O projeto seguiu um fluxo rigoroso de Engenharia e Análise de Dados:
 A empresa fatura bem (**Ticket Médio de R$ 2.583**), mas opera no caos.
 A taxa de atraso global é de **82,8%**.
 
-![Trend]()<img width="1600" height="800" alt="fig1" src="https://github.com/user-attachments/assets/2d18f851-cb9c-4e03-82c7-732bfd3bd8f0" />
+![Trend]<img width="1600" height="800" alt="fig1" src="https://github.com/user-attachments/assets/2d18f851-cb9c-4e03-82c7-732bfd3bd8f0" />
 
 *Evolução Mensal: O aumento da receita (barras) não resolveu o problema do atraso (linha vermelha).*
 
@@ -51,7 +51,13 @@ O atraso não é concentrado em áreas remotas. É um problema sistémico de exp
 * **Melhor Estado (PE):** 72% de atraso.
 * **Pior Estado (PA):** 92% de atraso.
 
-![Geo](reports/figures/geo_atraso.png)
+![Geo]<img width="1600" height="667" alt="fig2" src="https://github.com/user-attachments/assets/ecf3dbc0-8149-4f71-84e1-79ddc87523c9" />
+
+
+---
+## 📄 Download do Relatório
+
+[![PDF](https://img.shields.io/badge/Download-Relatório%20Completo-red?style=for-the-badge&logo=adobeacrobatreader)](https://github.com/user-attachments/files/23784870/Relatorio.Analitico.pdf)
 
 ---
 
@@ -76,4 +82,5 @@ ecommerce_analytics/
 │   └── Relatorio_Final.md    # Texto executivo para a diretoria
 │
 └── requirements.txt          # Dependências do projeto
+
 
