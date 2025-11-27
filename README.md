@@ -34,7 +34,8 @@ O projeto seguiu um fluxo rigoroso de Engenharia e Análise de Dados:
 A empresa fatura bem (**Ticket Médio de R$ 2.583**), mas opera no caos.
 A taxa de atraso global é de **82,8%**.
 
-![Trend](reports/figures/sazonalidade_trend.png)
+![Trend]()<img width="1600" height="800" alt="fig1" src="https://github.com/user-attachments/assets/2d18f851-cb9c-4e03-82c7-732bfd3bd8f0" />
+
 *Evolução Mensal: O aumento da receita (barras) não resolveu o problema do atraso (linha vermelha).*
 
 ### 2. A "Ilusão" do Frete Expresso
@@ -75,3 +76,4 @@ ecommerce_analytics/
 │   └── Relatorio_Final.md    # Texto executivo para a diretoria
 │
 └── requirements.txt          # Dependências do projeto
+
