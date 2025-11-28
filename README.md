@@ -54,6 +54,31 @@ O atraso não é concentrado em áreas remotas. É um problema sistémico de exp
 ![Geo]<img width="1600" height="667" alt="fig2" src="https://github.com/user-attachments/assets/ecf3dbc0-8149-4f71-84e1-79ddc87523c9" />
 
 
+## 🛠️ Metodologia Técnica e Engenharia de Dados
+
+Para garantir a confiabilidade dos KPIs apresentados, o projeto seguiu um pipeline rigoroso de tratamento de dados ("Bronze" para "Silver"), focado na integridade relacional e consistência temporal.
+
+### 1. Arquitetura e Modelagem (Star Schema)
+Os dados foram modelados centralizando as transações na tabela fato (`FACT_Orders`) e enriquecendo-a com tabelas dimensão.
+
+```mermaid
+erDiagram
+    FACT_ORDERS ||--|| DIM_DELIVERY : "1:1 (Possui Dados Logísticos)"
+    FACT_ORDERS ||--|| DIM_CUSTOMER : "N:1 (Realizado por)"
+    FACT_ORDERS ||--|| DIM_PRODUCTS : "N:1 (Contém Item)"
+    FACT_ORDERS {
+        string Id PK
+        date Order_Date
+        float Total
+        string Status
+    }
+    DIM_DELIVERY {
+        string Id PK
+        date D_Date
+        date D_Forecast
+    }
+
+
 ---
 ## 📄 Download do Relatório
 
@@ -82,5 +107,6 @@ ecommerce_analytics/
 │   └── Relatorio_Final.md    # Texto executivo para a diretoria
 │
 └── requirements.txt          # Dependências do projeto
+
 
 
