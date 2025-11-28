@@ -61,28 +61,12 @@ Para garantir a confiabilidade dos KPIs apresentados, o projeto seguiu um pipeli
 ### 1. Arquitetura e Modelagem (Star Schema)
 Os dados foram modelados centralizando as transações na tabela fato (`FACT_Orders`) e enriquecendo-a com tabelas dimensão.
 
-```mermaid
-erDiagram
-    FACT_ORDERS ||--|| DIM_DELIVERY : "1:1 (Possui Dados Logísticos)"
-    FACT_ORDERS ||--|| DIM_CUSTOMER : "N:1 (Realizado por)"
-    FACT_ORDERS ||--|| DIM_PRODUCTS : "N:1 (Contém Item)"
-    FACT_ORDERS {
-        string Id PK
-        date Order_Date
-        float Total
-        string Status
-    }
-    DIM_DELIVERY {
-        string Id PK
-        date D_Date
-        date D_Forecast
-    }
-
 
 ---
 ## 📄 Download do Relatório
 
-[![PDF](https://img.shields.io/badge/Download-Relatório%20Completo-red?style=for-the-badge&logo=adobeacrobatreader)](https://github.com/user-attachments/files/23784870/Relatorio.Analitico.pdf)
+[![PDF][Relatório Analítico.pdf](https://github.com/user-attachments/files/23830241/Relatorio.Analitico.pdf)
+
 
 ---
 
@@ -107,6 +91,7 @@ ecommerce_analytics/
 │   └── Relatorio_Final.md    # Texto executivo para a diretoria
 │
 └── requirements.txt          # Dependências do projeto
+
 
 
 
